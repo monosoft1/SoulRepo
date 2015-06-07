@@ -46,8 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Soul\Scripts\Bullet.js" />
-     <Compile Include="Assets\Soul\Scripts\Gun.js" />
+     <Compile Include="Assets\Soul\Scripts\Gun Damage\Bullet.js" />
+     <Compile Include="Assets\Soul\Scripts\Gun Damage\Gun.js" />
+     <Compile Include="Assets\Soul\Scripts\Multiplayer\DirectConnection.js" />
+     <Compile Include="Assets\Soul\Scripts\Multiplayer\SpawnManager.js" />
+     <Compile Include="Assets\Soul\Scripts\Player\Health.js" />
+     <Compile Include="Assets\Soul\Scripts\UI\Canvas\CanvasManagerS.js" />
+     <Compile Include="Assets\Soul\Scripts\UI\Connect\Scripts\ConnectBFS.js" />
+     <Compile Include="Assets\Soul\Scripts\UI\Disconnect\Scripts\DisconnectBFS.js" />
+     <Compile Include="Assets\Soul\Scripts\UI\StartServer\Scripts\StartServerBFS.js" />
      <None Include="Assets\Earthborn Troll\Shader\Alpha_Texture.shader" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
@@ -62,6 +69,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\CBG\FPSMeshTool\Shaders\InvisibleShadowCaster.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
@@ -145,6 +153,7 @@
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
      <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\CBG\FPSMeshTool\Shaders\InvisibleShadowCasterUnity5.shader" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />

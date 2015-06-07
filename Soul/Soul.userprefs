@@ -1,9 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Soul\Scripts\Bullet.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Soul\Scripts\Multiplayer\SpawnManager.js">
     <Files>
-      <File FileName="Assets\Soul\Scripts\Gun.js" Line="25" Column="2" />
-      <File FileName="Assets\Soul\Scripts\Bullet.js" Line="6" Column="19" />
+      <File FileName="Assets\Soul\Scripts\UI\Connect\Scripts\ConnectBFS.js" Line="1" Column="15" />
+      <File FileName="Assets\Soul\Scripts\Multiplayer\DirectConnection.js" Line="30" Column="88" />
+      <File FileName="Assets\Soul\Scripts\UI\StartServer\Scripts\StartServerBFS.js" Line="3" Column="12" />
+      <File FileName="Assets\Soul\Scripts\UI\Canvas\CanvasManagerS.js" Line="10" Column="25" />
+      <File FileName="Assets\Soul\Scripts\UI\Disconnect\Scripts\DisconnectBFS.js" Line="5" Column="28" />
+      <File FileName="Assets\Soul\Scripts\Multiplayer\SpawnManager.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
