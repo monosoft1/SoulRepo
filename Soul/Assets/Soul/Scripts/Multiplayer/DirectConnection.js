@@ -1,7 +1,9 @@
 ﻿#pragma strict
 
-var remoteIPadress = "127.0.0.1";
-var remotePort = 25000;
+public static var remoteIPadress : String = "127.0.0.1";
+public static var remotePort = 25000;
+var remoteIPT : String = DirectConnection.remoteIPadress;
+var remotePortT : String = DirectConnection.remotePort.ToString();
 var listenPort = 25000;
 
 var useNAT = true;
@@ -26,7 +28,12 @@ function OnGUI()
 {
    if(Network.peerType == NetworkPeerType.Disconnected)
    {
-      remoteIPadress = GUI.TextField(Rect(5, 75, 60, 30),remoteIPadress);
-      remotePort = parseInt(GUI.TextField(Rect(5, 110, 60, 30),remotePort.ToString()));
+      
    }
+}
+
+function Update ()
+{
+   remoteIPT = DirectConnection.remoteIPadress;
+   remotePortT = DirectConnection.remotePort.ToString();
 }

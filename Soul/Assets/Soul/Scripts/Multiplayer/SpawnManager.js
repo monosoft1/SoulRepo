@@ -1,9 +1,20 @@
 ﻿#pragma strict
 
-function Start () {
+public static var SControl : SpawnManager;
 
-}
+var RedPlayer : GameObject;
+var BluePlayer : GameObject;
 
-function Update () {
+var Dead = true;
 
+public static var CurTeam : String = "";
+
+var CurTeamStatus : String = SpawnManager.CurTeam;
+
+var SpawnPointRed : GameObject;
+var SpawnPointBlue : GameObject; 
+
+function Update () 
+{
+    SpawnManager.CurTeam = CurTeamStatus;
 }

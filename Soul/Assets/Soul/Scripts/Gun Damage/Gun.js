@@ -4,6 +4,8 @@ var Bullet : GameObject;
 var FirePoint : Transform;
 var Ammo : int = 30;
 
+var ShootSound : AudioSource;
+
 var FireMode : String = "Semi";
 
 function Start () 
@@ -18,6 +20,7 @@ function Update ()
        if(Input.GetMouseButtonDown(0))
        {
           FireOneBullet();
+          ShootSound.Play();
        }
     }
 }

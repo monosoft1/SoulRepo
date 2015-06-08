@@ -1,13 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Soul\Scripts\Multiplayer\SpawnManager.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Soul\Scripts\Player\Health.js">
     <Files>
-      <File FileName="Assets\Soul\Scripts\UI\Connect\Scripts\ConnectBFS.js" Line="1" Column="15" />
-      <File FileName="Assets\Soul\Scripts\Multiplayer\DirectConnection.js" Line="30" Column="88" />
-      <File FileName="Assets\Soul\Scripts\UI\StartServer\Scripts\StartServerBFS.js" Line="3" Column="12" />
-      <File FileName="Assets\Soul\Scripts\UI\Canvas\CanvasManagerS.js" Line="10" Column="25" />
-      <File FileName="Assets\Soul\Scripts\UI\Disconnect\Scripts\DisconnectBFS.js" Line="5" Column="28" />
-      <File FileName="Assets\Soul\Scripts\Multiplayer\SpawnManager.js" Line="1" Column="1" />
+      <File FileName="Assets\Soul\Scripts\Multiplayer\DirectConnection.js" Line="13" Column="21" />
+      <File FileName="Assets\Soul\Scripts\UI\Canvas\CanvasManagerS.js" Line="1" Column="1" />
+      <File FileName="Assets\Soul\Scripts\UI\RemoteIP\ValueChanged.js" Line="1" Column="1" />
+      <File FileName="Assets\Soul\Scripts\UI\RemotePort\RemotePValueCHanged.js" Line="1" Column="1" />
+      <File FileName="Assets\Soul\Scripts\UI\RedTeam\RedTeamButtonFunction.js" Line="9" Column="19" />
+      <File FileName="Assets\Soul\Scripts\UI\BlueTeam\BlueTeamButtonFunction.js" Line="9" Column="4" />
+      <File FileName="Assets\Soul\Scripts\UI\TSCanvasManager\TSCanvasManager.js" Line="4" Column="27" />
+      <File FileName="Assets\Soul\Scripts\Multiplayer\SpawnManager.js" Line="8" Column="7" />
+      <File FileName="Assets\Soul\Scripts\UI\Respawn\RespawnButtonFunction.js" Line="15" Column="7" />
+      <File FileName="Assets\Soul\Scripts\Gun Damage\Gun.js" Line="23" Column="28" />
+      <File FileName="Assets\Soul\Scripts\Player\Health.js" Line="28" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

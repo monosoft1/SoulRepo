@@ -51,10 +51,16 @@
      <Compile Include="Assets\Soul\Scripts\Multiplayer\DirectConnection.js" />
      <Compile Include="Assets\Soul\Scripts\Multiplayer\SpawnManager.js" />
      <Compile Include="Assets\Soul\Scripts\Player\Health.js" />
+     <Compile Include="Assets\Soul\Scripts\UI\BlueTeam\BlueTeamButtonFunction.js" />
      <Compile Include="Assets\Soul\Scripts\UI\Canvas\CanvasManagerS.js" />
      <Compile Include="Assets\Soul\Scripts\UI\Connect\Scripts\ConnectBFS.js" />
      <Compile Include="Assets\Soul\Scripts\UI\Disconnect\Scripts\DisconnectBFS.js" />
+     <Compile Include="Assets\Soul\Scripts\UI\RedTeam\RedTeamButtonFunction.js" />
+     <Compile Include="Assets\Soul\Scripts\UI\RemoteIP\ValueChanged.js" />
+     <Compile Include="Assets\Soul\Scripts\UI\RemotePort\RemotePValueCHanged.js" />
+     <Compile Include="Assets\Soul\Scripts\UI\Respawn\RespawnButtonFunction.js" />
      <Compile Include="Assets\Soul\Scripts\UI\StartServer\Scripts\StartServerBFS.js" />
+     <Compile Include="Assets\Soul\Scripts\UI\TSCanvasManager\TSCanvasManager.js" />
      <None Include="Assets\Earthborn Troll\Shader\Alpha_Texture.shader" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />

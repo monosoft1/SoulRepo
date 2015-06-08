@@ -31,5 +31,6 @@ function TakeDamage()
 function DIE()
 {
    Debug.Log("I am Gone");
-   Destroy(gameObject);
+   Network.Destroy(gameObject);
+   SpawnManager.SControl.Dead = true;
 }
