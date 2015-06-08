@@ -1,16 +1,18 @@
 ﻿#pragma strict
 
-var Bullet : GameObject;
+var RedBullet : GameObject;
+var BlueBullet : GameObject;
 var FirePoint : Transform;
 var Ammo : int = 30;
 
 var ShootSound : AudioSource;
 
 var FireMode : String = "Semi";
+var Team : String = "";
 
 function Start () 
 {
-   
+   Team = SpawnManager.CurTeam;
 }
 
 function Update () 
@@ -27,6 +29,15 @@ function Update ()
 
 function FireOneBullet()
 {
-    Instantiate(Bullet, FirePoint.position, FirePoint.rotation);
-    Ammo--;
+   if(Team == "Blue")
+   {
+      Instantiate(RedBullet, FirePoint.position, FirePoint.rotation);
+      Ammo--;
+   }
+   if(Team == "Red")
+   {
+      Instantiate(BlueBullet, FirePoint.position, FirePoint.rotation);
+      Ammo--;
+   }
+    
 }

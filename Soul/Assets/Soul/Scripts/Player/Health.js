@@ -12,9 +12,19 @@ function Update ()
    }
 }
 
+function OnGUI ()
+{
+   
+}
+
 function OnTriggerEnter (hit : Collider) 
 {
-   if(hit.gameObject.tag == "Bullet")
+   if(hit.gameObject.tag == "RedBullet")
+   {
+      bullet = hit.gameObject;
+      TakeDamage();
+   }
+   if(hit.gameObject.tag == "BlueBullet")
    {
       bullet = hit.gameObject;
       TakeDamage();
