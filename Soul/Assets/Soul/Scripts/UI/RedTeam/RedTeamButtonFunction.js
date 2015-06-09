@@ -1,10 +1,12 @@
 ﻿#pragma strict
 
-
-
 function RTFunction () 
 {
-   Network.Instantiate(SpawnManager.SControl.RedPlayer, SpawnManager.SControl.SpawnPointRed.transform.position, SpawnManager.SControl.SpawnPointRed.transform.rotation, 0);
-   SpawnManager.CurTeam = "Red";
-   SpawnManager.SControl.Dead = false;
+     if(SpawnManager.CurTeam == "")
+     {
+        SpawnManager.TSCanvasO.SetActive(false);
+        SpawnManager.CurTeam = "Red";
+        Network.Instantiate(SpawnManager.RedPlayer, SpawnManager.SpawnPointRed.transform.position, GameObject.FindGameObjectWithTag("SpawnM").transform.rotation, 0);
+        SpawnManager.Dead = false;
+     }  
 }

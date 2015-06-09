@@ -2,15 +2,18 @@
 
 public static var remoteIPadress : String = "127.0.0.1";
 public static var remotePort = 25000;
+public static var listenPort = 25000;
+
 var remoteIPT : String = DirectConnection.remoteIPadress;
 var remotePortT : String = DirectConnection.remotePort.ToString();
-var listenPort = 25000;
+var listenPortStatus : String = DirectConnection.listenPort.ToString();
 
-var useNAT = true;
+public static var useNAT = true;
 var myIP = "";
 var myPort = "";
 
-var MaxPlayers = 32;
+var MaxPlayerStatus : String = DirectConnection.MaxPlayers.ToString();
+public static var MaxPlayers = 32;
 
 public static var control : DirectConnection;  
 
@@ -28,7 +31,7 @@ function OnGUI()
 {
    if(Network.peerType == NetworkPeerType.Disconnected)
    {
-      
+     
    }
 }
 

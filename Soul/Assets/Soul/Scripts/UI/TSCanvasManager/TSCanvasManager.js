@@ -16,7 +16,7 @@ function Update ()
    }
    else
    {
-      RespawnB.active = true; 
+      RespawnB.SetActive(true); 
       Destroy(TSContent);
    }
 }

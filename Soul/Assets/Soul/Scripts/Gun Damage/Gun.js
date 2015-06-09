@@ -3,7 +3,9 @@
 var RedBullet : GameObject;
 var BlueBullet : GameObject;
 var FirePoint : Transform;
-var Ammo : int = 30;
+public static var Ammo : int = 30;
+
+public static var control : Gun;
 
 var ShootSound : AudioSource;
 
@@ -17,6 +19,8 @@ function Start ()
 
 function Update () 
 {
+  if(GetComponent.<NetworkView>().isMine == true)
+  {
     if(FireMode == "Semi")
     {
        if(Input.GetMouseButtonDown(0))
@@ -25,6 +29,7 @@ function Update ()
           ShootSound.Play();
        }
     }
+   }
 }
 
 function FireOneBullet()
