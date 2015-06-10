@@ -28,6 +28,9 @@ var TSCanvasOStatus : GameObject;
 public static var TSButtons : GameObject;
 var TSButtonsStatus : GameObject;
 
+public static var PlayerStatus : GameObject;
+var PlayerStatusS : GameObject;
+
 var CurTeamStatus : String = SpawnManager.CurTeam;
 
 public static var SpawnPointRed : GameObject;
@@ -55,6 +58,8 @@ function Awake ()
    SpawnManager.TSCanvasO = TSCanvasOStatus;
    
    SpawnManager.TSButtons = TSButtonsStatus;
+   
+   SpawnManager.PlayerStatus = PlayerStatusS;
 }
 
 function Update () 
@@ -80,6 +85,8 @@ function Update ()
     SpawnManager.TSCanvasO = TSCanvasOStatus;
    
     SpawnManager.TSButtons = TSButtonsStatus;
+    
+    SpawnManager.PlayerStatus = PlayerStatusS;
      
     if(Network.peerType == NetworkPeerType.Disconnected)
     {
@@ -88,7 +95,7 @@ function Update ()
           SpawnManager.TSButtons.SetActive(false);
           RespawnBStatus.SetActive(true);
        }
-       else
+       else if(SpawnManager.Connection == false && Dead == false)
        {
           SpawnManager.TSButtons.SetActive(true);
           RespawnBStatus.SetActive(false);
@@ -96,6 +103,7 @@ function Update ()
     
        if(SpawnManager.Connection == false)
        {
+          SpawnManager.PlayerStatus.SetActive(false);
           TSCanvasOStatus.SetActive(false);
           NDisconnectBStatus.SetActive(true);
        }

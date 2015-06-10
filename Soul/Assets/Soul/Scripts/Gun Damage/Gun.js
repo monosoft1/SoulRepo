@@ -21,15 +21,19 @@ function Update ()
 {
   if(GetComponent.<NetworkView>().isMine == true)
   {
-    if(FireMode == "Semi")
-    {
-       if(Input.GetMouseButtonDown(0))
-       {
-          FireOneBullet();
-          ShootSound.Play();
-       }
-    }
-   }
+     if(FireMode == "Semi")
+     {
+        if(Input.GetMouseButtonDown(0))
+        {
+           FireOneBullet();
+           ShootSound.Play();
+        }
+     }
+  }
+  else
+  {
+     enabled = true;
+  }
 }
 
 function FireOneBullet()

@@ -10,6 +10,11 @@ var Team : String = "";
 function Start ()
 {
    Team = SpawnManager.CurTeam;
+   
+   if(GetComponent.<NetworkView>().isMine == true)
+   {
+      enabled = true;
+   }
 }
 
 public static var control : Health;
@@ -45,7 +50,7 @@ function OnTriggerEnter (hit : Collider)
 
 function TakeDamage()
 {
-   var BulletScript : Bullet = bullet.GetComponent("Bullet");
+   var BulletScript : Bullet = bullet.GetComponent(Bullet);
    damage = BulletScript.Damage;
    Health -= damage;
 }

@@ -8,5 +8,6 @@ function RTFunction ()
         SpawnManager.CurTeam = "Red";
         Network.Instantiate(SpawnManager.RedPlayer, SpawnManager.SpawnPointRed.transform.position, GameObject.FindGameObjectWithTag("SpawnM").transform.rotation, 0);
         SpawnManager.Dead = false;
+        SpawnManager.PlayerStatus.SetActive(true);
      }  
 }

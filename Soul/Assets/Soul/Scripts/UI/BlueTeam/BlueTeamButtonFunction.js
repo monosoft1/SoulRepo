@@ -10,5 +10,6 @@ function BTFunction ()
         Network.Instantiate(SpawnManager.BluePlayer, SpawnManager.SpawnPointBlue.transform.position, GameObject.FindGameObjectWithTag("SpawnM").transform.rotation, 0);
         SpawnManager.CurTeam = "Blue";
         SpawnManager.Dead = false;
+        SpawnManager.PlayerStatus.SetActive(true);
      }
 }

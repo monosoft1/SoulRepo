@@ -1,22 +1,23 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Soul\Scripts\Gun Damage\Gun.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Soul\Scripts\Player\Movement\Walker.js">
     <Files>
-      <File FileName="Assets\Soul\Scripts\Multiplayer\SpawnManager.js" Line="73" Column="26" />
-      <File FileName="Assets\Soul\Scripts\UI\RedTeam\RedTeamButtonFunction.js" Line="9" Column="30" />
-      <File FileName="Assets\Soul\Scripts\Multiplayer\DirectConnection.js" Line="20" Column="31" />
+      <File FileName="Assets\Soul\Scripts\Multiplayer\DirectConnection.js" Line="1" Column="1" />
+      <File FileName="Assets\Soul\Scripts\Multiplayer\SpawnManager.js" Line="1" Column="1" />
+      <File FileName="Assets\Soul\Scripts\UI\RedTeam\RedTeamButtonFunction.js" Line="1" Column="1" />
       <File FileName="Assets\Soul\Scripts\UI\RemoteIP\ValueChanged.js" Line="1" Column="1" />
       <File FileName="Assets\Soul\Scripts\UI\RemotePort\RemotePValueCHanged.js" Line="1" Column="1" />
-      <File FileName="Assets\Soul\Scripts\UI\BlueTeam\BlueTeamButtonFunction.js" Line="9" Column="28" />
+      <File FileName="Assets\Soul\Scripts\UI\BlueTeam\BlueTeamButtonFunction.js" Line="1" Column="1" />
       <File FileName="Assets\Soul\Scripts\UI\Respawn\RespawnButtonFunction.js" Line="1" Column="1" />
-      <File FileName="Assets\Soul\Scripts\Gun Damage\Gun.js" Line="48" Column="2" />
+      <File FileName="Assets\Soul\Scripts\Gun Damage\Gun.js" Line="1" Column="1" />
       <File FileName="Assets\Soul\Scripts\Player\Ammo\AmmoBarVFunction.js" Line="1" Column="1" />
-      <File FileName="Assets\Soul\Scripts\Player\Health\Health.js" Line="1" Column="1" />
-      <File FileName="Assets\Soul\Scripts\UI\StartServer\Scripts\StartServerBFS.js" Line="5" Column="2" />
+      <File FileName="Assets\Soul\Scripts\Player\Health\Health.js" Line="63" Column="2" />
+      <File FileName="Assets\Soul\Scripts\UI\StartServer\Scripts\StartServerBFS.js" Line="1" Column="1" />
       <File FileName="Assets\Soul\Scripts\UI\Connect\Scripts\ConnectBFS.js" Line="1" Column="1" />
-      <File FileName="Assets\Soul\Scripts\UI\Disconnect\Scripts\DisconnectBFS.js" Line="9" Column="41" />
+      <File FileName="Assets\Soul\Scripts\UI\Disconnect\Scripts\DisconnectBFS.js" Line="1" Column="1" />
       <File FileName="Assets\Soul\Scripts\UI\TSCanvasManager\TSCanvasManager.js" Line="1" Column="1" />
-      <File FileName="Assets\Soul\Scripts\UI\Canvas\CanvasManagerS.js" Line="3" Column="44" />
+      <File FileName="Assets\Soul\Scripts\UI\Canvas\CanvasManagerS.js" Line="1" Column="1" />
+      <File FileName="Assets\Soul\Scripts\Player\Movement\Walker.js" Line="32" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
