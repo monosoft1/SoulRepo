@@ -3,12 +3,11 @@
 var RedBullet : GameObject;
 var BlueBullet : GameObject;
 var FirePoint : Transform;
-public static var Ammo : int = 100;
+public static var Ammo : int = 30;
 
 public static var control : Gun;
 
 var ShootSound : AudioSource;
-var OutOfAmmoSound : AudioSource;
 
 var FireMode : String = "Semi";
 var Team : String = "";
@@ -26,15 +25,8 @@ function Update ()
      {
         if(Input.GetMouseButtonDown(0))
         {
-          if(Gun.Ammo > 0)
-          {
-            FireOneBullet();
-            ShootSound.Play();
-          }
-          else
-          {
-            OutOfAmmoSound.Play();
-          }
+           FireOneBullet();
+           ShootSound.Play();
         }
      }
   }
