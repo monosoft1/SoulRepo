@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
-public static var Health : int = 100;
-var HealthStatus : int = Health;
+public static var HealthV : int = 100;
+var HealthVStatus : int;
 private var bullet : GameObject;
 var damage : int;
 
@@ -9,6 +9,7 @@ var Team : String = "";
 
 function Start ()
 {
+   HealthVStatus = Health.HealthV;
    Team = SpawnManager.CurTeam;
    
    if(GetComponent.<NetworkView>().isMine == true)
@@ -21,9 +22,10 @@ public static var control : Health;
 
 function Update () 
 {
-   var HealthStatus : int = Health;
+   
+   Health.HealthV = HealthVStatus;
 
-   if(Health < 0)
+   if(HealthVStatus <= 0)
    {
       DIE();
    }
@@ -50,14 +52,13 @@ function OnTriggerEnter (hit : Collider)
 
 function TakeDamage()
 {
-   var BulletScript : Bullet = bullet.GetComponent(Bullet);
-   damage = BulletScript.Damage;
-   Health -= damage;
+   damage = Bullet.Damage;
+   HealthVStatus -= damage;
 }
 
 function DIE()
 {
    Debug.Log("I am Gone");
    Network.Destroy(gameObject);
-   SpawnManager.control.Dead = true;
+   SpawnManager.Dead = true;
 }

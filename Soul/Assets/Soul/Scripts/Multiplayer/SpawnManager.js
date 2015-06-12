@@ -88,19 +88,21 @@ function Update ()
     
     SpawnManager.PlayerStatus = PlayerStatusS;
      
+    if(ConnectionStatus == true && DeadStatus == true && CurTeamStatus != "")
+    {
+       SpawnManager.TSCanvasO.SetActive(true);
+       SpawnManager.TSButtons.SetActive(false);
+       SpawnManager.RespawnB.SetActive(true);
+    }
+    if(SpawnManager.Connection == false && SpawnManager.Dead == true)
+    {
+       SpawnManager.TSCanvasO.SetActive(true);
+       SpawnManager.TSButtons.SetActive(true);
+       SpawnManager.RespawnB.SetActive(false);
+    }
+       
     if(Network.peerType == NetworkPeerType.Disconnected)
     {
-       if(SpawnManager.Connection == true && Dead == true)
-       {
-          SpawnManager.TSButtons.SetActive(false);
-          RespawnBStatus.SetActive(true);
-       }
-       else if(SpawnManager.Connection == false && Dead == false)
-       {
-          SpawnManager.TSButtons.SetActive(true);
-          RespawnBStatus.SetActive(false);
-       }
-    
        if(SpawnManager.Connection == false)
        {
           SpawnManager.PlayerStatus.SetActive(false);
